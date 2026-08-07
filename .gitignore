@@ -1,0 +1,46 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+
+# Secrets & local env
+!.env.example
+
+# Model weights & large artifacts
+*.safetensors
+*.ckpt
+*.pt
+*.bin
+checkpoints/
+vendor/**
+!vendor/.gitkeep
+
+# Character training artifacts / private refs
+characters/*/lora.safetensors
+characters/*/dataset/
+characters/*/training/
+_ref_pack/
+
+# Outputs & caches
+outputs/**/*.png
+outputs/**/*.jpg
+outputs/**/*.webp
+outputs/**/*.json
+*.npz
+!requirements.txt
+.cache/
+hf_cache/
+.gradio/
+
+# IDE / OS
+.idea/
+*.swp
+config.bat
+node_modules
